@@ -1,0 +1,1415 @@
+{
+	"info": {
+		"_postman_id": "f9464920-85cc-4218-8953-8a157c85a243",
+		"name": "MIR-100",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get STATUS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/status",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Queue list history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/mission_queue",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"mission_queue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mission groups list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/mission_groups",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"mission_groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mission group Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/mission_groups/mirconst-guid-0000-0011-missiongroup/missions",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"mission_groups",
+						"mirconst-guid-0000-0011-missiongroup",
+						"missions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mission Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/missions/38c122f2-3ddd-11ea-a527-000129922e26",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"missions",
+						"38c122f2-3ddd-11ea-a527-000129922e26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mission Actions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/missions/38c122f2-3ddd-11ea-a527-000129922e26/actions",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"missions",
+						"38c122f2-3ddd-11ea-a527-000129922e26",
+						"actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Mission",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"mission_id\" : \"38c122f2-3ddd-11ea-a527-000129922e26\",\n\t\"message\": \"from Mota\"\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/mission_queue",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"mission_queue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abort All Missions",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/mission_queue",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"mission_queue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abort Mission",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/mission_queue/2ykhjkhjkhjkhk6ky",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"mission_queue",
+						"2ykhjkhjkhjkhk6ky"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Status (Pause)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"state_id\": 4\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/status",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Status (Resume)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"state_id\": 3\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/status",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Maps",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/maps",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get STATUS (Position)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/status",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Status (Change Map)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"map_id\": \"1529c1ee-3dd7-11ea-a527-000129922e26\"\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/status",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"status"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"description": "ESSA FUNÇÃO ISSO RESETA A REFENCIA"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "ESSA FUNÇÃO ISSO RESETA A REFENCIA"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "ESSA FUNÇÃO ISSO RESETA A REFENCIA"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "ESSA FUNÇÃO ISSO RESETA A REFENCIA"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "ESSA FUNÇÃO ISSO RESETA A REFENCIA"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "ESSA FUNÇÃO ISSO RESETA A REFENCIA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Status (Position)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/status",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Changes logs of user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/changes/me",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"changes",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dashboards",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/dashboards/mirconst-guid-0000-0001-dashboards00",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"dashboards",
+						"mirconst-guid-0000-0001-dashboards00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brake",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"state\": 0\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/hook/brake",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"hook",
+						"brake"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Hardware Configuration",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/hw/export",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"hw",
+						"export"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ImportHardware Configuration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/IST/Desktop/MIR/Hardware Configuration/MiR_R1564_v2-7-8_2020-01-23_21-04-30.hw"
+						}
+					]
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/maps",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get IO Module",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/io_modules",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"io_modules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Error Resports List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/log/error_reports",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"log",
+						"error_reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Error Resports Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/log/error_reports/2",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"log",
+						"error_reports",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Error Resports Details File",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/log/error_reports/2/download",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"log",
+						"error_reports",
+						"2",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Remote Actions Logs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/remote_support/log",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"remote_support",
+						"log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Modbus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/modbus",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"modbus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Modbus Missions Triggers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/modbus/missions",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"modbus",
+						"missions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Modbus Missions Triggers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"coil_id\": 1,\n\t\"mission_id\": \"38c122f2-3ddd-11ea-a527-000129922e26\",\n\t\"name\": \"Mission 1\"\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/modbus/missions",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"modbus",
+						"missions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Modbus Missions Triggers Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/modbus/missions/38c122f2-3ddd-11ea-a527-000129922e26",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"modbus",
+						"missions",
+						"38c122f2-3ddd-11ea-a527-000129922e26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Positions (Paradas) on Map",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/positions",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Position(s) on Map",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"map_id\": \"38c122f2-3ddd-11ea-a527-000129922e2\",\n\t\"orientation\": \"\",\n\t\"pos_x\": \"\",\n\t\"pos_y\": \"\"\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/positions/38c122f2-3ddd-11ea-a527-000129922e26",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"positions",
+						"38c122f2-3ddd-11ea-a527-000129922e26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get PLC Registers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/registers",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"registers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set PLC Register Value",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"value\": 0.0\n}"
+				},
+				"url": {
+					"raw": "mir.com/api/v2.0.0/registers/1",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"registers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Settings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/settings",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Advanced Settings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/settings/advanced",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"settings",
+						"advanced"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Software Backup List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/software/backups",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"software",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Software Backup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/software/backups",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"software",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Software Backup List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/software/backups",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"software",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Software Backup Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/software/backups/drgdhfghfgjhgjghjg",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"software",
+						"backups",
+						"drgdhfghfgjhgjghjg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get distance driven",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/statistics/distance",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"statistics",
+						"distance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get System Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"type": "text",
+						"value": "Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
+					}
+				],
+				"url": {
+					"raw": "mir.com/api/v2.0.0/system/info",
+					"host": [
+						"mir",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2.0.0",
+						"system",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
